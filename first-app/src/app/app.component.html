@@ -1,14 +1,24 @@
 <h2>Welcome to {{title}}</h2>
+<h3>Input server info</h3>
 
-<p>Server name {{ServerName}} with PID {{ServerPID}} is {{toggleServerStatus()}}</p>
+<input type="text" placeholder="Server name" [(ngModel)]="ServerName">
+<!-- <input type="text" placeholder="Server name" [ngModel]="ServerName"> -->
+<h3>Display server info</h3>
+<p>{{ServerName}}</p>
+<p>{{ServerPID}}</p>
+<p>{{ServerStatus}}</p>
+
+<!-- <p>Server name {{ServerName}} with PID {{ServerPID}} is {{toggleServerStatus()}}</p> -->
 
 <button [disabled]="buttonState" (click)="toggleServerStatus()">Toggle Server Status</button>
 
-<div class="starter-template">
+<app-assignment2></app-assignment2>
+
+<!-- <div class="starter-template">
   <label for="Fname"></label>
   <input type="text" name="Fname" [(ngModel)]="name">
   <p>{{name}}</p>
 </div>
 
-<p class="jumbotron">Hello, my name is {{name}}</p>
+<p class="jumbotron">Hello, my name is {{name}}</p> -->
 

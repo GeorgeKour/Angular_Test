@@ -1,0 +1,7 @@
+<p>assignment2 works!</p>
+
+<input type="text" placeholder="First name" [(ngModel)]="firstName">
+
+<p>{{firstName}}</p>
+
+<button [disabled]="!firstName.length" (click)="setFirstNameEmpty()">Delete First name</button>
