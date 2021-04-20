@@ -1,5 +1,10 @@
+<h2>Welcome to {{title}}</h2>
+
+<p>Server name {{ServerName}} with PID {{ServerPID}} is {{toggleServerStatus()}}</p>
+
+<button [disabled]="buttonState" (click)="toggleServerStatus()">Toggle Server Status</button>
+
 <div class="starter-template">
-  <h2>This is the {{title}} component</h2>
   <label for="Fname"></label>
   <input type="text" name="Fname" [(ngModel)]="name">
   <p>{{name}}</p>
@@ -7,8 +12,3 @@
 
 <p class="jumbotron">Hello, my name is {{name}}</p>
 
-<app-server></app-server>
-
-<app-red></app-red>
-<app-green></app-green>
-<app-yellow></app-yellow>
